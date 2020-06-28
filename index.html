@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Flash Card game</title>
+</head>
+<body>
+<button id="class" class="clas btn"> </button>
+<i class="fas fa trash">Clear Cards</i>
+<h1>Flash Card Game
+<button id="show" class="btn btn-small">
+ <i class="fas fa-plus">Add New Card</i>
+</button>
+
+</h1>
+<div class="cards-container cards">
+<div class="card active"></div>
+<div class="inner-card"></div>
+<div class="inner-front">
+    <p>What is PHP?
+
+    </p>
+</div>
+<div class="inner-card-back">
+    <p> 
+        A programming language.
+    </p>
+</div>
+
+<div class="card "></div>
+<div class="inner-card"></div>
+<div class="inner-front">
+    <p>What is PHP?
+
+    </p>
+</div>
+<div class="inner-card-back">
+    <p> 
+        A programming language.
+    </p>
+</div>
+</div>
+<div class="navigation">
+    <button id="prev" class="nav-button">
+        <i class="fas fa-arrow-left"></i>
+        <p id="current"></p>
+        <button id="next" class="nav-button">
+     <i class="fas fa-arrow-right"></i>  
+    </button>
+</div>
+
+<div id="add-container" class="add-container">
+    <h1>Add New Card
+    <button id="hide" class="btn btn-small btn-ghost">
+        <i class="fas fa-times"></i>
+    </button>
+</h1>
+
+<div class="form-group">
+    <label for="question">Question</label>
+    <textarea id="question" placeholder="Enter question..."></textarea>
+
+    <div class="form-group">
+        <label for="answer">Answer</label>
+        <textarea id="answer" placeholder="Enter Answer..."></textarea>
+</div>
+
+<button id="add-card" class="btn">
+    <i class="fas fa-plus"> Add Card</i>
+</button>
+</div>
+
+   <script src="script.js"></script> 
+</body>
+</html>
+
